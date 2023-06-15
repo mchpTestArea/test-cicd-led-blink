@@ -14,8 +14,8 @@ pipeline {
     }
 	
 	environment {
-		GITHUB_OWNER = 'microchip-pic-avr-examples'	
-		GITHUB_URL ='https://github.com/microchip-pic-avr-examples/pic16f15244-delay-led-blink'
+		GITHUB_OWNER="mchpTestArea"
+		GITHUB_URL="https://github.com/mchpTestArea/test-cicd-led-blink" 
 		BITBUCKET_URL = 'https://bitbucket.microchip.com/scm/ebe/pic16f15244-delay-led-blink.git'
 		SEMVER_REGEX = '^(0|[1-9]\\d*)+\\.(0|[1-9]\\d*)+\\.(0|[1-9]\\d*)+$'
 		ARTIFACTORY_SERVER = 'https://artifacts.microchip.com:7999/artifactory'
@@ -29,8 +29,8 @@ pipeline {
 		stage('setup') {
 		    steps {
 				script {
-					execute("git clone https://bitbucket.microchip.com/scm/citd/mpae-buildpipeline-groovy-scripts.git")
-					def buildPipeline = load ('mpae-buildpipeline-groovy-scripts/xc8mplabx-buildpipeline.groovy')
+					execute("git clone https://bitbucket.microchip.com/scm/~i68889/mpae-buildpipeline-groovy-scripts-fork.git")
+					def buildPipeline = load ('mpae-buildpipeline-groovy-scripts-fork/xc8mplabx-buildpipeline.groovy')
 					buildPipeline.runStages()
 				}
             }
