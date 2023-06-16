@@ -3,7 +3,7 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.3.0",
-        "name": "com.microchip.mcu8.mplabx.project.pic16f15244-delay-led-blink",
+        "name": "com.microchip.mcu8.mplabx.project.test-cicd-led-blink",
         "version": "1.0.0",
         "displayName": "Toggle an LED using the 'delay()' Function with PIC16F15244",
         "projectName": "test-cicd-led-blink",
