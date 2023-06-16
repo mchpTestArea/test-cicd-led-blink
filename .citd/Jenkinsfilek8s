@@ -16,7 +16,7 @@ pipeline {
 	environment {
 		GITHUB_OWNER="mchpTestArea"
 		GITHUB_URL="https://github.com/mchpTestArea/test-cicd-led-blink" 
-		BITBUCKET_URL = 'https://bitbucket.microchip.com/scm/ebe/pic16f15244-delay-led-blink.git'
+		BITBUCKET_URL = 'https://bitbucket.microchip.com/scm/ebe/test-cicd-led-blink.git'
 		SEMVER_REGEX = '^(0|[1-9]\\d*)+\\.(0|[1-9]\\d*)+\\.(0|[1-9]\\d*)+$'
 		ARTIFACTORY_SERVER = 'https://artifacts.microchip.com:7999/artifactory'
 	}	
