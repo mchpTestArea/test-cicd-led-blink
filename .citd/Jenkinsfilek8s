@@ -29,8 +29,8 @@ pipeline {
 		stage('setup') {
 		    steps {
 				script {
-					execute("git clone https://bitbucket.microchip.com/scm/~i68889/mpae-buildpipeline-groovy-scripts-fork.git")
-					def buildPipeline = load ('mpae-buildpipeline-groovy-scripts-fork/xc8mplabx-buildpipeline.groovy')
+					execute("git clone https://bitbucket.microchip.com/scm/mcu8jpt/mpae-buildpipeline-groovy-scripts.git")
+					def buildPipeline = load ('mpae-buildpipeline-groovy-scripts/xc8mplabx-buildpipeline.groovy')
 					buildPipeline.runStages()
 				}
             }
